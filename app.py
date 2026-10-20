@@ -2,10 +2,13 @@ from flask import Flask, send_from_directory, request, jsonify, render_template
 import os
 import base64
 import io
+from dotenv import load_dotenv
 from PIL import Image
 from groq import Groq
 import pymupdf
 from functools import wraps
+
+load_dotenv()
 
 from agents import (
     run_doctoraai,
@@ -32,7 +35,7 @@ try:
         firebase_admin.initialize_app(cred)
         db = firestore.client()
         FIREBASE_ENABLED = True
-        print("✓ Firebase initialized successfully")
+        print("Firebase initialized successfully")
     else:
         FIREBASE_ENABLED = False
         db = None
