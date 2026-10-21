@@ -391,8 +391,3 @@ torage
 * Transparent AI reasoning
 * Human verification for uncertain outputs
 
----
-
-# 🌍 Long-Term Vision
-
-DoctoraAI aims to evolve into a comprehensive AI healthcare ecosystem that helps individuals manage their health from daily medication reminders to long-term preventive care, while supporting—not replacing—licensed healthcare professionals.
