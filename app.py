@@ -85,7 +85,7 @@ def ocr_image_with_groq(file):
     base64_image = base64.b64encode(image_bytes).decode("utf-8")
 
     completion = groq_client.chat.completions.create(
-        model="meta-llama/llama-4-scout-17b-16e-instruct",
+        model="qwen/qwen3.8-27b",
         messages=[
             {
                 "role": "user",
